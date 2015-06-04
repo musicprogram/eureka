@@ -1,0 +1,103 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+  *= require font-awesome
+ *= require_self
+ */
+
+@import "bootstrap-sprockets";
+@import "bootstrap";
+@import "font-awesome";
+
+
+body.fondo{
+    background: url("fondo.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -ms-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: top center;
+  -webkit-touch-callout: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+
+
+
+/*
+Inspired by http://dribbble.com/shots/917819-iPad-Calendar-Login?list=shots&sort=views&timeframe=ever&offset=461
+*/
+
+
+.jumbotron {
+  text-align: center;
+  width: 30rem;
+  border-radius: 0.5rem;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  position: absolute;
+  margin: 4rem auto;
+  background-color: #78C72E;
+  padding: 2rem;
+}
+
+.container .glyphicon-fire {
+  font-size: 10rem;
+  margin-top: 3rem;
+  color: #f96145;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 1.4rem;
+  padding: 1rem;
+  background-color: #ecf2f4;
+  border-radius: 0.2rem;
+  border: none;
+}
+h2 {
+  margin-bottom: 3rem;
+  font-weight: bold;
+  color: white;
+}
+.btn {
+  border-radius: 0.2rem;
+}
+.btn .glyphicon {
+  font-size: 3rem;
+  color: #fff;
+}
+.full-width {
+  background-color: #8eb5e2;
+  width: 100%;
+  -webkit-border-top-right-radius: 0;
+  -webkit-border-bottom-right-radius: 0;
+  -moz-border-radius-topright: 0;
+  -moz-border-radius-bottomright: 0;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.box {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 3rem;
+  margin-left: 3rem;
+  margin-right: 3rem;
+}
