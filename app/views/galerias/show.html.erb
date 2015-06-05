@@ -1,0 +1,23 @@
+<body class="fondo">
+  <p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= @galeria.titulo %>
+</p>
+
+<p>
+  <strong>Titulo:</strong>
+  <%= image_tag @galeria.avatar.url(), class:'thumbnail' %>
+</p>
+
+
+<p>
+  <strong>Descripcion:</strong>
+  <%= @galeria.descripcion %>
+</p>
+
+<%= link_to 'Edit', edit_galeria_path(@galeria) %> |
+<%= link_to 'Back', galerias_path %>
+
+</body>

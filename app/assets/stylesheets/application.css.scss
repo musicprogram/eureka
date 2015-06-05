@@ -21,7 +21,7 @@
 
 
 body.fondo{
-    background: url("fondo.png");
+    background: url("fondo.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -40,6 +40,14 @@ body.fondo{
 /*
 Inspired by http://dribbble.com/shots/917819-iPad-Calendar-Login?list=shots&sort=views&timeframe=ever&offset=461
 */
+
+.navbar{
+  background-color: #78C72E;
+}
+
+li{
+  color: white;
+}
 
 
 .jumbotron {
@@ -100,4 +108,58 @@ h2 {
   margin-bottom: 3rem;
   margin-left: 3rem;
   margin-right: 3rem;
+}
+
+
+
+
+
+a:hover{
+  background-color: transparent;
+}
+
+
+#pinBoot {
+  position: relative;
+  max-width: 100%;
+  width: 100%;
+}
+.img1 {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+.white-panel {
+  position: absolute;
+  background: white;
+  box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
+  padding: 10px;
+}
+/*
+stylize any heading tags withing white-panel below
+*/
+
+.white-panel h1 {
+  font-size: 1em;
+}
+.white-panel h1 a {
+  color: #A92733;
+}
+.white-panel:hover {
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+  margin-top: -5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.thumbnail{
+  width: 200px;
+  height: 200px;
+}
+
+.carousel{
+  border-radius: 10px;
 }

@@ -1,5 +1,9 @@
 Rails.application.routes.draw do
+  resources :galerias
+
   get 'bienvenido/index'
+  
+  get 'bienvenido/quienessomos'
 
   devise_for :usuarios
   # The priority is based upon order of creation: first created -> highest priority.

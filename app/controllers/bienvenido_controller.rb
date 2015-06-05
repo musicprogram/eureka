@@ -3,4 +3,8 @@ class BienvenidoController < ApplicationController
   
   def index
   end
+  
+  def quienessomos
+    
+  end
 end

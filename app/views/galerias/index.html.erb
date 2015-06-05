@@ -1,0 +1,34 @@
+<body class="fondo">
+  
+
+<div class="container">
+  <div class="row">
+    <h2>Galería de Imagenes</h2>
+    <%= link_to 'Nueva Imagen', new_galeria_path %>
+
+    </p>
+    <hr>
+    <section id="pinBoot">
+      <% @galerias.each do |galeria| %>
+
+      <article class="white-panel"><%= image_tag galeria.avatar.url(), class:'img1' %>
+        <h4><%= galeria.titulo %></h4>
+        <p><%= galeria.descripcion %></p>
+        <td><%= link_to 'Mostrar', galeria %></td>
+        <td><%= link_to 'Editar', edit_galeria_path(galeria) %></td>
+        <td><%= link_to 'Destruir', galeria, method: :delete, data: { confirm: 'Estas Seguro?' } %></td>
+      </article>
+
+     
+     <% end %>
+    </section>
+
+
+    <hr>
+
+
+  </div>
+ 
+</div>
+</body>
+

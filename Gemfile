@@ -43,3 +43,5 @@ gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.4'
 
 gem "font-awesome-rails"
+
+gem "paperclip", "~> 4.2"
