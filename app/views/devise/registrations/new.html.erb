@@ -1,33 +1,48 @@
 <body class="fondo">
  
+<br></br>
+<br></br>
+
 
   <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
   <%= devise_error_messages! %>
 
 
-  <div class="jumbotron">
+ <div class="col-md-12">
+   
+   <div class="col-md-3">
+     
+   </div>
+   
+   <div class="col-md-6">
+      <div class="jumbotron">
     <div class="container">
-      <span class=""></span>
-      <h2>EUREKA</h2>
+      <h1 class="logo">
+      <%= image_tag("logoeurek.png") %>
+      </h1>
       <div class="box">
         <h3>Email</h3>
-        <%= f.email_field :email, autofocus: true %>
+        <%= f.email_field :email, autofocus: true, class:'form-control' %>
         <h3>Password</h3>
-        <%= f.label :password %>
-        <% if @minimum_password_length %>
-        <em>(<%= @minimum_password_length %> characters minimum)</em>
-        <% end %><br />
+        
+   
 
-        <%= f.password_field :password, autocomplete: "off" %>
-        <%= f.password_field :password_confirmation, autocomplete: "off" %>
-        <%= f.submit "Sign up", class:'btn btn-default full-width' %>
+        <%= f.password_field :password, autocomplete: "off", class:'form-control' %> <br>
+        <%= f.password_field :password_confirmation, autocomplete: "off", class:'form-control' %> <br>
+        <%= f.submit "Crear Usuario", class:'btn btn-default btn-lg ' %>
 
         <% end %>
-
+        <br> <br>
         <%= render "devise/shared/links" %>
       </div>
     </div>
   </div>
+   </div>
+   
+   <div class="col-md-3">
+     
+   </div>
+ </div>
 
 
 

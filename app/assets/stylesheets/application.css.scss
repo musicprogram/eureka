@@ -18,7 +18,16 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 @import "font-awesome";
+@import url("http://fonts.googleapis.com/css?family=Carrois+Gothic+SC");
 
+
+html{
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
+
+body{
+  font-family: 'Carrois Gothic SC', sans-serif;
+}
 
 body.fondo{
     background: url("fondo.jpg");
@@ -34,7 +43,9 @@ body.fondo{
   -webkit-tap-highlight-color: transparent;
 }
 
-
+h3 h1 h2 h4 h5{ 
+   font-family: 'Carrois Gothic SC', sans-serif;
+}
 
 
 /*
@@ -49,6 +60,74 @@ li{
   color: white;
 }
 
+a:hover{
+  background-color: transparent;
+}
+
+i:hover{
+  background-color: transparent;
+}
+
+button:hover{
+  background-color: transparent;
+}
+
+.img-circle{
+  -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+}
+
+
+.jumbotron{
+  background-color: #78C72E;
+  -webkit-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 23px 0px rgba(0,0,0,0.75);
+  
+  h3{
+     font-weight: bold;
+     color: white;
+     
+  }
+}
+
+
+.container{
+  h2{
+     font-weight: bold;
+     color: white;
+  }
+}
+
+.color{
+  background-color: #78C72E;
+}
+
+
+
+.med{
+  h5{
+     font-weight: bold;
+     color: white;
+     font-size: 20px;
+  }
+}
+
+.white{
+     font-weight: bold;
+     color: white;
+     font-size: 60px;
+}
+
+.white1{
+     font-weight: bold;
+     color: white;
+     font-size: 20px;
+}
+
+
+/*
 
 .jumbotron {
   text-align: center;
@@ -113,11 +192,8 @@ h2 {
 
 
 
+*/
 
-
-a:hover{
-  background-color: transparent;
-}
 
 
 #pinBoot {
@@ -136,9 +212,9 @@ a:hover{
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.3);
   padding: 10px;
 }
-/*
-stylize any heading tags withing white-panel below
-*/
+
+
+
 
 .white-panel h1 {
   font-size: 1em;
@@ -164,3 +240,6 @@ stylize any heading tags withing white-panel below
 .carousel{
   border-radius: 10px;
 }
+
+
+

@@ -4,6 +4,7 @@
   <title>Workspace</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
@@ -31,24 +32,32 @@
 	<div class="collapse navbar-collapse navbar-ex1-collapse">
 		<ul class="nav navbar-nav">
 			
-			<li><%=link_to "Inicio", root_path%></li>
+			<li class="barra1"><h4><%=link_to "Inicio", root_path%></h4></li>
 			
-			<li><%= link_to "galerías", galerias_path  %></li>
+			<li class="barra1"><h4><%= link_to "Galería", galerias_path  %></h4></li>
 			
-			<li><%=link_to "Quienes somos", bienvenido_quienessomos_path%></li>
-      
-			<li><%= link_to "salir".html_safe, destroy_usuario_session_path, :method => :delete, class: 'active' %></li>
+			<li class="barra1"><h4><%=link_to "Quienes Somos", bienvenido_quienessomos_path%></h4></li>
+			
 
 		</ul>
 	
 		<ul class="nav navbar-nav navbar-right">
 			
+      
+			<li><%= link_to "<i class='fa fa-user-times fa-2x'></i>".html_safe, destroy_usuario_session_path, :method => :delete, class: 'active' %></li>
 		</ul>
 	</div><!-- /.navbar-collapse -->
 </nav>
     
     <% end %>
     
+	    <style>
+	    
+	    	.barra1{
+	    		padding: 2px 7px;
+	    	}
+	    	
+	    </style>
     
     
 
@@ -63,3 +72,5 @@
 </div>
 </body>
 </html>
+
+

@@ -4,7 +4,7 @@
 <div class="container">
   <div class="row">
     <h2>Galería de Imagenes</h2>
-    <%= link_to 'Nueva Imagen', new_galeria_path %>
+    <%= link_to "<i class='fa fa-plus fa-3x'></i>".html_safe, new_galeria_path %>
 
     </p>
     <hr>
@@ -14,9 +14,8 @@
       <article class="white-panel"><%= image_tag galeria.avatar.url(), class:'img1' %>
         <h4><%= galeria.titulo %></h4>
         <p><%= galeria.descripcion %></p>
-        <td><%= link_to 'Mostrar', galeria %></td>
-        <td><%= link_to 'Editar', edit_galeria_path(galeria) %></td>
-        <td><%= link_to 'Destruir', galeria, method: :delete, data: { confirm: 'Estas Seguro?' } %></td>
+        <td><%= link_to "<i class='fa fa-file-image-o fa-3x social1'></i>".html_safe, galeria %></td>
+        
       </article>
 
      

@@ -196,3 +196,5 @@ http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Styl
 $(document).on('page:change', function () {
     $('.carousel').carousel()
 }); 
+
+
