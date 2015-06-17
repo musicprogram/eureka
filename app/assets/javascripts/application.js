@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require bootstrap-sprockets
+//= require swfobject
 //= require_tree .
 
 $(document).on('page:change', function () {
@@ -196,5 +197,12 @@ http://www.jqueryscript.net/layout/Simple-jQuery-Plugin-To-Create-Pinterest-Styl
 $(document).on('page:change', function () {
     $('.carousel').carousel()
 }); 
+
+
+
+$(document).ready(function() {
+	$(".sociales1").swfobject();
+});
+
 
 

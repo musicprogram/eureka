@@ -11,7 +11,14 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150605144240) do
+ActiveRecord::Schema.define(version: 20150617124435) do
+
+  create_table "contactenos", force: true do |t|
+    t.string   "nombre"
+    t.text     "descripcion"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "galerias", force: true do |t|
     t.string   "titulo"

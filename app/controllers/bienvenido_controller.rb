@@ -7,4 +7,7 @@ class BienvenidoController < ApplicationController
   def quienessomos
     
   end
+  
+
+  
 end

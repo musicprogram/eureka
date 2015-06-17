@@ -46,3 +46,4 @@ gem "font-awesome-rails"
 
 gem "paperclip", "~> 4.2"
 
+gem "swfobject-rails"

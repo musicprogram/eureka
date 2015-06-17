@@ -30,7 +30,7 @@ body{
 }
 
 body.fondo{
-    background: url("fondo.jpg");
+  background: url("fondo.jpg");
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -ms-background-size: cover;
@@ -92,6 +92,20 @@ button:hover{
   }
 }
 
+.jumbotron1{
+  background: url("lobocontainer.jpg");
+  border-radius: 10px;
+  
+  
+}
+
+
+.jumbotron1:hover{
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+
 
 .container{
   h2{
@@ -107,7 +121,7 @@ button:hover{
 
 
 .med{
-  h5{
+  h5 {
      font-weight: bold;
      color: white;
      font-size: 20px;
@@ -125,6 +139,30 @@ button:hover{
      color: white;
      font-size: 20px;
 }
+
+
+.white11{
+  margin: 10px ;
+  font-weight: bold;
+  color: white;
+  font-size: 120px;
+}
+
+.white111{
+  margin: 10px ;
+  font-weight: bold;
+  color: white;
+  font-size: 50px;
+}
+
+.white1111{
+  margin: 20px ;
+  font-weight: bold;
+  color: black;
+  font-size: 50px;
+  text-transform: uppercase;
+}
+
 
 
 /*
@@ -242,4 +280,107 @@ h2 {
 }
 
 
+.bonotoes{
+  width: 700px;
+  height: 700px;
+}
 
+
+
+.button {
+  background: yellow;
+  display: inline-block;
+  padding: 2rem 4rem;
+  margin: 1rem;
+  text-decoration: none;
+  font: bold 1rem Sans-Serif;
+  color: white;
+  position: relative;
+  overflow: hidden;
+  @include transition(0.7s);
+  &:before {
+    content: "";
+    position: absolute;
+    bottom: -40px;
+    right: -40px;
+    width: 10px;
+    height: 10px;
+    background: #222;
+    border-radius: 50%;
+    @include transition(0.7s);
+  }
+  span {
+    position: relative;
+  }
+  &:hover, &:focus {
+    color: white;
+    &:before {
+      
+    }
+  }
+}
+
+.button:nth-child(1) { 
+  background: #78C72E;
+  -webkit-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  -moz-box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+  box-shadow: 0px 0px 12px 0px rgba(0,0,0,0.75);
+}
+.button:nth-child(2) { 
+  background: #3498db;
+  &:before {
+    bottom: auto;
+    top: -40px;
+  }
+}
+.button:nth-child(3) { 
+  background: #e74c3c;
+  &:before {
+    right: auto;
+    left: -40px;
+  }
+}
+.button:nth-child(4) { 
+  background: #f1c40f;
+  &:before {
+    right: auto;
+    bottom: auto;
+    left: -40px;
+    top: -40px;
+  }
+}
+.button:nth-child(5) { 
+  background: #1abc9c;
+  &:before {
+    right: auto;
+    bottom: auto;
+    left: 90px;
+    top: -40px;
+  }
+  &:hover, &:focus {
+    &:before {
+      left: -50px;
+    }
+  }
+}
+
+
+.center{
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  font-size: 60px;
+}
+
+.ss{
+  color: white;
+}
+
+
+
+ .sociales1{
+    
+        width: 640px;
+        height: 344px;
+        
+    }

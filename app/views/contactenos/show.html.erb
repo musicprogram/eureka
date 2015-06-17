@@ -1,0 +1,21 @@
+<p id="notice"><%= notice %></p>
+
+
+<body class="fondo">
+  
+  <br> </br>
+
+    <div class="jumbotron1">
+ 
+<h1>
+<%= link_to image_tag('eureka.png',class:'img-responsive eve',).html_safe,  new_contacto_path %>
+
+<h5 class="white111">Agradecemos su contacto y pronto nos comunicaremos</h5>
+<h4 class="white1111">
+  <strong><%= @contacto.nombre %></strong> 
+</h4>
+
+</h1>
+</div>
+
+</body>

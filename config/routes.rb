@@ -1,4 +1,32 @@
 Rails.application.routes.draw do
+  resources :contactenos
+
+  get 'juegos/sociales'
+
+  get 'juegos/ingles'
+
+  get 'juegos/espanol'
+
+  get 'juegos/index'
+
+  get 'juegos/sociales_nivel_1'
+
+  get 'juegos/sociales_nivel_2'
+
+  get 'juegos/ingles_nivel_1'
+
+  get 'juegos/ingles_nivel_2'
+
+  get 'juegos/espanol_nilvel_1'
+
+  get 'juegos/espanol_nilvel_2'
+
+  get 'juegos/biblioteca'
+
+  get 'juegos/espacial'
+
+  get 'juegos/playero'
+
   resources :galerias
 
   get 'bienvenido/index'

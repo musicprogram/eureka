@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Workspace</title>
+  <title>EUREKA</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <link href='http://fonts.googleapis.com/css?family=Carrois+Gothic+SC' rel='stylesheet' type='text/css'>
@@ -36,7 +36,11 @@
 			
 			<li class="barra1"><h4><%= link_to "Galería", galerias_path  %></h4></li>
 			
-			<li class="barra1"><h4><%=link_to "Quienes Somos", bienvenido_quienessomos_path%></h4></li>
+			<li class="barra1"><h4><%= link_to "Juegos", juegos_index_path  %></h4></li>
+				
+			<li class="barra1"><h4><%=link_to "Quíenes Somos", bienvenido_quienessomos_path%></h4></li>
+			
+			<li class="barra1"><h4><%=link_to "Contactenos", contactenos_path%></h4></li>
 			
 
 		</ul>

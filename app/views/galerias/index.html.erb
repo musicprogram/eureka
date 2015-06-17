@@ -4,8 +4,10 @@
 <div class="container">
   <div class="row">
     <h2>Galería de Imagenes</h2>
+    
+    <% if current_usuario == Usuario.find(1) %>
     <%= link_to "<i class='fa fa-plus fa-3x'></i>".html_safe, new_galeria_path %>
-
+    <% end %>
     </p>
     <hr>
     <section id="pinBoot">
